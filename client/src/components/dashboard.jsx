@@ -6,7 +6,7 @@ import Posts from "./posts";
 import { paginate } from "../utils/paginate";
 import { api } from "../config.js";
 import http from "../services/httpService";
-import Jumotron from "./common/jumbotron";
+import Home from "./common/Home.jsx";
 
 class Dashboard extends Component {
   state = {
@@ -63,7 +63,6 @@ class Dashboard extends Component {
       return <p>There are no posts in the database!</p>;
     return (
       <React.Fragment>
-        <Jumotron />
         <div className="container">
           <div className="row">
             <div className="col">

@@ -1,0 +1,28 @@
+.recent-topics-title{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.numbered-topics{
+    display: flex;
+flex-direction: row;
+}
+.recent-question{
+    color: #4297F3;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom:2px
+}
+.numbered{
+    margin-right:10px
+}
+.load-more-button{
+    border-color: #4297F3;
+    color: #4297F3;
+    border-radius:10px;
+    height:40px;
+    margin-left:40%;
+    margin-top:20px;
+    background-color: white;
+}

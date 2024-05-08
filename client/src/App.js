@@ -6,7 +6,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import http from "./services/httpService";
 import { api } from "./config.js";
 import Dashboard from "./components/dashboard";
-import Jumotron from "./components/common/jumbotron";
+import Home from "./components/common/Home.jsx";
 import NotFound from "./components/not-found";
 import NewPost from "./components/createpost";
 import Log from "./components/log";
@@ -29,7 +29,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavBar user={this.state.user} />
         {/* on the dashboard, have a quesry string parameter to 
        to find the method of sorting of posts.(using query string package) */}
         <Switch>
@@ -41,7 +40,7 @@ class App extends Component {
             render={(props) => <Dashboard {...props} user={this.state.user} />}
           />
           <Route path="/not-found" component={NotFound} />
-          <ProtectedRoute
+          <Route
             path="/new-post"
             render={(props) => <NewPost {...props} user={this.state.user} />}
           />
@@ -49,7 +48,7 @@ class App extends Component {
             path="/post/:id"
             render={(props) => <PostPage {...props} user={this.state.user} />}
           />
-          <Route exact path="/" component={Jumotron} />
+          <Route exact path="/" component={Home} />
           <Redirect from="/users" to="/users/login " />
           <Redirect to="/not-found" />
         </Switch>

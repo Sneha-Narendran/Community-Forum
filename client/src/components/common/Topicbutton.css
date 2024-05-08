@@ -1,0 +1,21 @@
+.topic-button{
+    width: 160px;
+    border: 15px solid #F5F5F5;
+    margin: 20px;
+    background-color: #F5F5F5;
+}
+.topic-button-title{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topic-button-text{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topic-button-tag-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}

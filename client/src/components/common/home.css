@@ -1,0 +1,16 @@
+.community-forum-container{
+    padding: 10px;
+    margin:10px;
+
+}
+.community-forum-title{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.community-forum-sub-title{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
